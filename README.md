@@ -1,2 +1,2 @@
-https://kennethvds.github.io/My-CV/
-![Curriculum Vitae](cv.png)
+ https://kennethvds.github.io/vebrent/
+![Vebrent BVBA](cv.png)
