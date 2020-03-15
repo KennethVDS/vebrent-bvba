@@ -2103,14 +2103,14 @@ input, select, textarea {
 				}
 
 				#nav > ul > li > a {
-					border-radius: 5px;
+					border-radius: 12.5px;
 					color: #b1b1b1;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
-					-moz-transition: background-color .25s ease-in-out;
-					-webkit-transition: background-color .25s ease-in-out;
-					-ms-transition: background-color .25s ease-in-out;
-					transition: background-color .25s ease-in-out;
+					-moz-transition: background-color 750ms ease-in-out;
+					-webkit-transition: background-color 750ms ease-in-out;
+					-ms-transition: background-color 750ms ease-in-out;
+					transition: background-color 750ms ease-in-out;
 					outline: 0;
 				}
 
@@ -2176,7 +2176,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: rgb(255, 255, 255) url("../images/projecten/machine7.JPG");
+		background: url("../images/projecten/machine7.JPG");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -2221,9 +2221,15 @@ input, select, textarea {
 		}
 
 		#intro h2 {
-			margin-top: 100px;
+			margin-top: 175px;
 			color: #ffffff;
 			font-size: 1.75em;
+		}
+
+		#intro #aboutPicture {
+			display: flex;
+			height: auto;
+			max-width: 100%;
 		}
 
 		#intro p {
@@ -2508,7 +2514,7 @@ input, select, textarea {
 					margin: 0;
 					padding: 40px 0 0 0;
 				}
-
+				
 					#intro section.first {
 						border-top: 0;
 						padding-top: 0;
@@ -2885,9 +2891,9 @@ input, select, textarea {
 
 				#banner header {
 					color: #ffffff;
-					padding: 1.5em 1em 1.5em 1em;
+					padding: 0;
 					display: block;
-					border-radius: 0;
+					margin-top: 0;
 				}
 
 					#banner header h2 {
