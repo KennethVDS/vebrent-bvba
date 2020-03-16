@@ -1,2 +1,2 @@
 www.vebrent.be
-![](vebrent.png)
+https://kennethvds.github.io/vebrent-bvba/
