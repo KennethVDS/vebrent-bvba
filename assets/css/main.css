@@ -2163,7 +2163,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: url("../images/projecten/machine7.JPG");
+		background: #252122 url("../images/projecten/machine7.JPG");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -2604,7 +2604,7 @@ input, select, textarea {
 						position: absolute;
 						left: 10px;
 						top: 10px;
-						width: 50px;
+						width: 33%;
 						height: 40px;
 						line-height: 40px;
 						font-size: 18px;
@@ -2637,7 +2637,7 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 44%;
 				z-index: 10002;
 				color: #b8a818;
 				background-image: url("images/bg02.png");
@@ -2688,6 +2688,14 @@ input, select, textarea {
 					color: #e2ce1d;
 				}
 
+				#navPanel .depth-1 {
+					display: none;
+				}
+
+				#navPanel .depth-2 {
+					display: none;
+				}
+				
 			body.navPanel-visible #page-wrapper {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);

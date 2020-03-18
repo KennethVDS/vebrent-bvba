@@ -1,15 +1,8 @@
-/*
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
 		$body = $('body');
 
-	// Breakpoints.
 		breakpoints({
 			xlarge:  [ '1281px',  '1680px' ],
 			large:   [ '981px',   '1280px' ],
@@ -24,16 +17,12 @@
 			}, 100);
 		});
 
-	// Dropdowns.
 		$('#nav > ul').dropotron({
 			mode: 'fade',
 			noOpenerFade: true,
 			alignment: 'center'
 		});
 
-	// Nav.
-
-		// Title Bar.
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
@@ -41,7 +30,6 @@
 			)
 				.appendTo($body);
 
-		// Panel.
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
@@ -60,5 +48,4 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
-
 })(jQuery);
