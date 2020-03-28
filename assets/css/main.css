@@ -2163,7 +2163,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #252122 url("../images/projecten/machine7.JPG");
+		background: url("../images/projecten/machine7.JPG");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -2234,6 +2234,7 @@ input, select, textarea {
 
 		#intro ul {
 			margin-top: 7px;
+			list-style-type:none;
 		}
 
 		#intro .middle {
