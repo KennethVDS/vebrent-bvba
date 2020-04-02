@@ -1588,7 +1588,9 @@ input, select, textarea {
 			}
 
 	}
-
+#footer > #mediaLinkList {
+	text-decoration: none;
+}
 /* Main */
 
 	#main {

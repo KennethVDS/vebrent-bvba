@@ -2299,9 +2299,13 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		display: flex;
 		position: relative;
 		color: #858484;
 		padding: 4em 0;
+		text-align: center;
+		margin-left: 50%;
+		transform: translateX(-15%);
 	}
 
 		#footer:before {
@@ -2718,6 +2722,11 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+		/* Footer */ 
+		#footer > section {
+			width: 100%;
+		}
+
 	}
 
 /* Small */
@@ -2904,12 +2913,6 @@ input, select, textarea {
 
 			#main {
 				padding: 20px 0;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: 40px 0 20px 0;
 			}
 
 	}
