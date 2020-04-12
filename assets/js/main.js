@@ -52,18 +52,18 @@
 				$(function () {
 					var body = $('#banner');
 					var backgrounds = [
-					  'url(https://images.pexels.com/photos/544965/pexels-photo-544965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)', 
-					  'url(https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)'];
+					  'url("../../assets/images/projecten/machine7.jpg")', 
+					  'url("../../assets/images/projecten/project2.JPG")'];
 					var current = 0;
 				
 					function nextBackground() {
 						body.css(
-							'background',
+							'background-image',
 						backgrounds[current = ++current % backgrounds.length]);
 				
 						setTimeout(nextBackground, 10000);
 					}
 					setTimeout(nextBackground, 10000);
-					body.css('background', backgrounds[0]);
+					body.css('background-image', backgrounds);
 				});
 })(jQuery);
