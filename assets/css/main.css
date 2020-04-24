@@ -1803,6 +1803,13 @@ input, select, textarea {
 					top: 0;
 				}
 
+		.contactbutton {
+			background-color: #e2ce1d;
+		}
+		.contactbutton:hover {
+			background-color: #dfdfdf;
+		}
+
 /* Dates */
 
 	ul.dates {
@@ -2165,17 +2172,17 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: url("../images/projecten/machine7.JPG");
 		background-position: center center;
-		background-size: 100% auto;
+		background-size: 75% 75%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: 1.5em 0 0 0;
 	}
 
 		#banner header {
+			position: relative;
 			background-color: rgba(34, 30, 31, 0.98);
 			display: inline-block;
 			padding: 2.5em 5em;
@@ -2186,7 +2193,6 @@ input, select, textarea {
 				color: #fff;
 				font-weight: 700;
 				font-size: 2.5em;
-				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
@@ -2197,12 +2203,19 @@ input, select, textarea {
 				font-size: 1.5em;
 			}
 
+			#banner #video {
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 75%;
+				height: 75%;
+				text-align: center;
+				position: relative;
+			}
 /* Intro */
 
 	#intro {
 		text-align: center;
 		overflow: hidden;
-		padding: 2em 0 0 0;
 	}
 	
 		#intro section {
