@@ -49,5 +49,11 @@
 					visibleClass: 'navPanel-visible'
 				});
 				
+				$(".depth-0").click(function(event){
+					$(".depth-1").toggle();
+				});
 				
+				$(".depth-1").click(function(event){
+					$(".depth-2").toggle();
+				});
 })(jQuery);

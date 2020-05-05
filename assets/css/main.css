@@ -2323,8 +2323,9 @@ input, select, textarea {
 		color: #858484;
 		padding: 4em 0;
 		text-align: center;
+		width: 100%;
 		margin-left: 50%;
-		transform: translateX(-15%);
+		transform: translateX(-50%);
 	}
 
 		#footer:before {
@@ -2333,44 +2334,10 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
-			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
 		}
 
-		#footer a {
-			color: #c5c4c4;
-		}
-
-		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
-			color: #fff;
-		}
-
-			#footer h2 a, #footer h3 a, #footer h4 a, #footer h5 a, #footer h6 a, #footer strong a, #footer b a {
-				color: inherit;
-			}
-
-		#footer ul.contact li,
-		#footer ul.dates li,
-		#footer ul.divided li {
-			border-top-color: #353434;
-			border-top-color: rgba(255, 255, 255, 0.05);
-		}
-
-		#footer header {
-			margin: 0 0 3em 0;
-		}
-
-			#footer header h2 {
-				font-size: 1.75em;
-			}
-		#footer section {
-			width: 300px;
-		}
-		#secondArgumentMain {
-			padding-top: 100px;
-		}
 /* Large */
 
 	@media screen and (max-width: 1280px) {
@@ -2688,7 +2655,6 @@ input, select, textarea {
 					display: block;
 					color: #e2ce1d;
 				}
-
 				#navPanel .depth-1 {
 					display: none;
 				}
@@ -2696,6 +2662,11 @@ input, select, textarea {
 				#navPanel .depth-2 {
 					display: none;
 				}
+
+				#navPanel .depth-0:focus ~ #navPanel .depth-1 {
+					display: block;
+				}
+				
 				
 			body.navPanel-visible #page-wrapper {
 				-moz-transform: translateX(275px);
@@ -2717,11 +2688,6 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
-
-		/* Footer */ 
-		#footer > section {
-			width: 100%;
-		}
 
 	}
 
