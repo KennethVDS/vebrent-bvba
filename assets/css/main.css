@@ -1557,9 +1557,7 @@ input, select, textarea {
 				padding: 0 1em 0 1em;
 			}
 
-	footer {
-		margin: 2.25em 0 0 0;
-	}
+	
 /* Box */
 
 	.box {
@@ -2207,13 +2205,14 @@ input, select, textarea {
 				font-size: 1.5em;
 			}
 
-			#banner #video {
+			#video {
 				background-position: center;
 				background-repeat: no-repeat;
 				width: 75%;
 				height: 75%;
 				text-align: center;
 				position: relative;
+				margin-top: 55px;
 			}
 /* Intro */
 
@@ -2599,7 +2598,6 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				height: 100%;
-				left: 0;
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
@@ -2620,35 +2618,26 @@ input, select, textarea {
 					padding: 0.3em;
 					font-style: italic;
 					position: relative;
+					margin-left: 11px;
 				}
 
 					#navPanel .link:first-child {
 						border-top: 0;
+						margin-left: 11px;
 					}
 
 				#navPanel .indent-1 {
-					display: inline-block;
-					width: 1em;
+					display: block;
+					margin-left: 11px;
 				}
 
 				#navPanel .indent-2 {
-					display: inline-block;
-					width: 2em;
+					display: block;
+					margin-left: 22px;
 				}
 
 				#navPanel .indent-3 {
-					display: inline-block;
-					width: 3em;
-				}
-
-				#navPanel .indent-4 {
-					display: inline-block;
-					width: 4em;
-				}
-
-				#navPanel .indent-5 {
-					display: inline-block;
-					width: 5em;
+					display: block;
 				}
 
 				#navPanel .depth-0 {
@@ -2657,14 +2646,12 @@ input, select, textarea {
 				}
 				#navPanel .depth-1 {
 					display: none;
+					margin-left: 11px;
 				}
 
 				#navPanel .depth-2 {
 					display: none;
-				}
-
-				#navPanel .depth-0:focus ~ #navPanel .depth-1 {
-					display: block;
+					margin-left: 11px;
 				}
 				
 				
