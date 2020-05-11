@@ -1329,6 +1329,17 @@ input, select, textarea {
 		body.touch .poptrox-popup .nav-next {
 			opacity: 1.0 !important;
 		}
+		#mediaLinkList ul {
+			list-style: none;
+		}
+		#mediaLinkList ul li a {
+			color: #e2ce1d;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		#mediaLinkList ul li a:active {
+			color: #998c1a;
+		}
 
 		@media screen and (max-width: 980px) {
 
