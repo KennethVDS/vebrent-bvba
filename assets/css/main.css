@@ -2272,7 +2272,6 @@ input, select, textarea {
 		display: flex;
 		position: relative;
 		color: #858484;
-		padding: 4em 0;
 		text-align: center;
 		width: 100%;
 		margin-left: 50%;
@@ -2590,10 +2589,11 @@ input, select, textarea {
 				#navPanel .depth-0 {
 					display: block;
 					color: #e2ce1d;
+					margin-left: 11px;
 				}
 				#navPanel .depth-1 {
 					display: none;
-					margin-left: 11px;
+					margin-left: 50px;
 				}
 
 				#navPanel .depth-2 {
