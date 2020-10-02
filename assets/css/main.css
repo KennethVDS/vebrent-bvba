@@ -2075,7 +2075,9 @@ input, select, textarea {
 					color: #fff !important;
 					font-weight: 700;
 				}
-
+				#navDepth1 {
+					margin-left: 0;
+				}
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
@@ -2420,7 +2422,9 @@ input, select, textarea {
 			#nav {
 				display: none;
 			}
-
+			#nav ul li ul li a{
+				align-content: center !important;
+			}
 		/* Intro */
 
 			#intro {
@@ -2564,7 +2568,7 @@ input, select, textarea {
 			}
 
 				#navPanel .link {
-					display: relative;
+					display: block !important;
 					color: #998c1a;
 					text-decoration: none;
 					width: 250px;
@@ -2573,7 +2577,7 @@ input, select, textarea {
 					padding: 0.3em;
 					font-style: italic;
 					position: relative;
-					margin-left: 11px;
+					margin-left: 11px ;
 				}
 
 					#navPanel .link:first-child {
@@ -2588,7 +2592,7 @@ input, select, textarea {
 
 				#navPanel .indent-2 {
 					display: block;
-					margin-left: 22px;
+					margin-left: -22px;
 				}
 
 				#navPanel .depth-0 {
@@ -2598,14 +2602,14 @@ input, select, textarea {
 				}
 				#navPanel .depth-1 {
 					display: none;
-					margin-left: 50px;
+					margin-left: 22px;
 				}
 
 				#navPanel .depth-2 {
 					display: none;
 					margin-left: 11px;
 				}
-				
+			}
 				
 			body.navPanel-visible #page-wrapper {
 				-moz-transform: translateX(275px);
