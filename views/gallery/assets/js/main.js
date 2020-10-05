@@ -201,7 +201,7 @@
 			});
 
 	// Main.
-		var $main = $('#main');
+		var $main = $('.main');
 
 		// Thumbs.
 			$main.children('.thumb').each(function() {

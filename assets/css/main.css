@@ -1787,11 +1787,14 @@ input, select, textarea {
 				left: 0;
 				top: 1.3em;
 				font-size: 1.1em;
+				font-weight: bold;
+				color: #ffffff;
 			}
 
 			ul.contact li p {
-				margin: 0;
+				margin: auto;
 				width: 125px;
+
 			}
 
 			ul.contact li:first-child {
@@ -2075,9 +2078,6 @@ input, select, textarea {
 					color: #fff !important;
 					font-weight: 700;
 				}
-				#navDepth1 {
-					margin-left: 0;
-				}
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
@@ -2272,10 +2272,10 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		display: flex;
 		position: relative;
 		color: #858484;
 		text-align: center;
+		padding: 4em 0;
 	}
 		#footer:before {
 			content: '';
@@ -2283,18 +2283,20 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
+			background: url("images/bg01.png");
+			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
 		}
+		#footer header h2 {
+			font-size: 1.75em;
+			font-weight: bold;
+			color: #ffffff;
+		}
 		#informatieblok {
-			margin: auto !important;
-			align-content: center;
+			margin: auto;
 		}
-		#informatieblok > .content {
-			text-align: center;
-			align-items: center;
-			align-content: center;
-		}
+		
 /* Large */
 
 	@media screen and (max-width: 1280px) {
@@ -2370,10 +2372,6 @@ input, select, textarea {
 					margin: 0 0 1.5em 0;
 				}
 
-					#footer header h2 {
-						font-size: 1.25em;
-					}
-
 		/* Copyright */
 
 			#copyright {
@@ -2404,7 +2402,7 @@ input, select, textarea {
 			}
 
 				.box footer ul.actions li .button {
-					width: 100%;
+					width: %%;
 				}
 
 				.box footer ul.actions li:first-child {
@@ -2594,7 +2592,19 @@ input, select, textarea {
 					display: block;
 					margin-left: -22px;
 				}
+				#navPanel .indent-3 {
+					display: inline-block;
+					width: 3em;
+				}
+				#navPanel .indent-4 {
+					display: inline-block;
+					width: 4em;
+				}
 
+				#navPanel .indent-5 {
+					display: inline-block;
+					width: 5em;
+				}
 				#navPanel .depth-0 {
 					display: block;
 					color: #e2ce1d;
