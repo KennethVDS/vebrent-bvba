@@ -8,14 +8,16 @@
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
+			<a href="index.html"><img class="vebrentlogo" src="assets/images/logo.svg"></a>
 				<section id="header">
+					
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Startpagina</a></li>
 								<li>
 									<a>In Beeld</a>
 									<ul id="navDepth1">
-										<li><a href="./views/activiteiten.html"">Vacatures</a></li>
+										<li><a href="./views/vacature.html"">Vacatures</a></li>
 										<li>
 											<a href="./views/gallery/gallerij.html">Projecten</a>
 										</li>
@@ -45,8 +47,11 @@
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<section class="first">
-										<h3></h3>
-										<p>Vebrent is al 15 jaar aan de slag met als specialiteit grond- graaf -en sloopwerken, wegeniswerken en algemene aannemingen.</p>
+										<i class="far fa-id-badge"></i>
+										<p>Vebrent is al 15 jaar aan de slag met als specialiteit grond- graaf -en sloopwerken, wegeniswerken en algemene aannemingen.
+										</p>
+										<p>Wij komen gratis bij u langs voor een vrijblijvende offerte op maat van uw project! </br>
+											Aarzel dus zeker niet om ons te contacteren.</p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
@@ -65,10 +70,12 @@
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="middle">
-										<h3></h3>
-										<p>Ons sterk team is vooral bekwaam en flexibel!
-											Wij vernieuwen steeds ons machinepark, dusdanig
-											kunnen wij bedrijfszeker werken voor zowel de openbare als de privésector.</p>
+										<i class="fas fa-dna"></i>
+										<p>Ons sterk team is vooral bekwaam en flexibel! </br>
+											Wij vernieuwen steeds ons machinepark, dusdanig </br>
+											kunnen wij bedrijfszeker werken voor zowel de openbare als de privésector. </br>
+											We hebben sinds 2019 een nieuwe jonge gedreven zaakvoerder.
+										</p>
 									</section>
 								</div>
 							</div>
@@ -87,35 +94,38 @@
 										<header class="major" >
 										</header>
 										<div class="row">
-											<div class="col-6 col-12-small">
-												<section class="title">
-													<header>
-														<ul class="actions">
-															<li><a href="views/activiteiten.html" class="button large">een blik in onze Activiteiten</a></li>
-														</ul>
-													</header>
-												</section>
-												<section class="box">
-													<a href="#" class="image featured"><img src="./assets/images/projecten/Grondwerken/grond3.jpeg" alt="" /></a>
-													<h2>Grondwerken</h2>
-													<p>Een diep gegronde liefde voor de job</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="./views/activiteiten.html" class="button alt icon solid fa-file-alt">Meer lezen</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div id="secondArgumentMain" class="col-6 col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="./assets/images/projecten/Omgeving/Steenokkerzeel-Aanleg-kinderdagverblijf.jpeg" alt="" /></a>
-													<h2>Bestrating</h2>
-													<p>Steengoede & rechtlijnige afwerking.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="./views/activiteiten.html" class="button alt icon solid fa-file-alt">Meer lezen</a></li>
-														</ul>
-													</footer>
+											<h2>een blik in onze Activiteiten</h2>
+											<div id="maincarousel" class="col-6 col-12-small">
+												<section>
+													<div class="slideshow-container">
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Omgeving/omgeving2.JPG" style="width:100%">
+														</div>
+			
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Afbraak/Haasdonk-Feestzaal/afbraak2.jpeg" style="width:100%">
+														</div>
+			
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Machinepark/kraan3.jpg" style="width:100%">
+														</div>
+
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Rioleringswerken/riool.jpeg" style="width:100%">
+														</div>
+
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Grondwerken/grond4.jpeg" style="width:100%">
+														</div>
+
+														<div class="mySlides1">
+															<img src="assets/images/projecten/Nieuws/kledij.jpeg" style="width:100%">
+														</div>
+			
+														<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+														<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+														</div>
+														<a href="views/activiteiten.html" id="meercarouselbutton" class="button large">Meer</a>
 												</section>
 											</div>
 										</div>
@@ -178,6 +188,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/carousel.js"></script>
+			<script src="https://use.fontawesome.com/fdc5f6a0b9.js"></script>
 	</body>
 </html>

@@ -271,5 +271,5 @@
 				breakpoints.on('>xsmall', function() {
 					$main[0]._poptrox.windowMargin = 50;
 				});
-
+				var slideIndex = [1,1];
 })(jQuery);

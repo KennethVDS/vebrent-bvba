@@ -1565,6 +1565,7 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
+		color: #231f20;
 	}
 
 		.box .image.featured {
@@ -2038,6 +2039,8 @@ input, select, textarea {
 
 	#nav {
 		margin: 0;
+		text-align: right;
+		margin-right: 2em;
 	}
 
 		#nav > ul {
@@ -2070,12 +2073,12 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					background: #e2ce1d;
-					color: #ffffff;
+					color: #231f20;
 				}
 
 				#nav > ul > li.current > a {
 					background: #e2ce1d;
-					color: #fff !important;
+					color: #231f20 !important;
 					font-weight: 700;
 				}
 	.dropotron {
@@ -2130,7 +2133,7 @@ input, select, textarea {
 	#banner {
 		background-image: url(../images/main/main.jpeg);
 		background-position: center center;
-		background-size: 95% 95%;
+		background-size: 95%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -2402,7 +2405,7 @@ input, select, textarea {
 			}
 
 				.box footer ul.actions li .button {
-					width: %%;
+					width: 100%;
 				}
 
 				.box footer ul.actions li:first-child {
@@ -2416,7 +2419,9 @@ input, select, textarea {
 			}
 
 		/* Nav */
-
+		.vebrentlogo {
+			display: none;
+		}
 			#nav {
 				display: none;
 			}
@@ -2642,7 +2647,7 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
-	}
+	
 
 /* Small */
 
@@ -2702,6 +2707,7 @@ input, select, textarea {
 
 			.box {
 				padding: 25px 15px 20px 15px;
+				
 			}
 
 				.box .image.featured {
@@ -2831,3 +2837,61 @@ input, select, textarea {
 			}
 
 	}
+/* CAROUSEL */
+	.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a grey background color */
+		.prev:hover, .next:hover {
+		background-color: #f1f1f1;
+		color: black;
+		}
+
+		#maincarousel {
+			width: 100%;
+		}
+		#meercarouselbutton {
+			color: #e2ce1d!important;
+			text-align: center;
+			margin: auto;
+		}
+		#meercarouselbutton:hover {
+			background-color: transparent!important;
+		}
+		.far, .fas{
+			font-size: 2em;
+			margin-bottom: 11px;
+		}
+		.vebrentlogo {
+			width: 11em;
+			float: left;
+		}
