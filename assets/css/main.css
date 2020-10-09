@@ -140,10 +140,12 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.5em;
+		font-weight: bold;
 	}
 
 	h3 {
 		font-size: 1.35em;
+		font-weight: bold;
 	}
 
 	a {
@@ -1638,7 +1640,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #e2ce1d;
+			background: #e1ce46;
 		}
 
 		input[type="button"]:active,
@@ -1646,7 +1648,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #e2ce1d;
+			background: #e1ce46;
 		}
 
 		input[type="button"].alt,
@@ -1824,7 +1826,7 @@ input, select, textarea {
 			}
 
 		.contactbutton {
-			background-color: #e2ce1d;
+			background-color: #e1ce46;
 		}
 		.contactbutton:hover {
 			background-color: #dfdfdf;
@@ -1848,7 +1850,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 1.3em;
-			background-color: #e2ce1d;
+			background-color: #e1ce46;
 			height: 3.5em;
 			text-align: center;
 			color: #fff;
@@ -1863,7 +1865,7 @@ input, select, textarea {
 				position: absolute;
 				bottom: 0;
 				right: -1.2em;
-				border-left: solid 1.25em #e2ce1d;
+				border-left: solid 1.25em #e1ce46;
 				border-top: solid 1.8em transparent;
 				border-bottom: solid 1.8em transparent;
 			}
@@ -2085,12 +2087,12 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #e2ce1d;
+					background: #e1ce46;
 					color: #231f20;
 				}
 
 				#nav > ul > li.current > a {
-					background: #e2ce1d;
+					background: #e1ce46;
 					color: #231f20 !important;
 					font-weight: 700;
 				}
@@ -2121,7 +2123,7 @@ input, select, textarea {
 		}
 
 			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #e2ce1d;
+				color: #e1ce46;
 			}
 
 		.dropotron.level-0 {
@@ -2176,7 +2178,7 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #e2ce1d;
+				color: #e1ce46;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -2225,7 +2227,7 @@ input, select, textarea {
 			height: auto;
 			max-width: 100%;
 			padding-bottom: 11px;
-			border-bottom: 1px solid #e2ce1d;
+			border-bottom: 1px solid #e1ce46;
 		}
 
 		#intro p {
@@ -2554,12 +2556,12 @@ input, select, textarea {
 						font-size: 18px;
 						color: #252122;
 						text-align: center;
-						background: #e2ce1d;
+						background: #e1ce46;
 						border-radius: 5px;
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #e2ce1d;
+						background-color: #e1ce46;
 					}
 
 			#navPanel {
@@ -2628,7 +2630,7 @@ input, select, textarea {
 				}
 				#navPanel .depth-0 {
 					display: block;
-					color: #e2ce1d;
+					color: #e1ce46;
 					margin-left: 11px;
 				}
 				#navPanel .depth-1 {
@@ -2675,8 +2677,8 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 
-			h2, h3, h4, h5, h6 {
-				font-size: 1.25em;
+			h2 {
+				font-size: 2em;
 			}
 
 		/* Button */
@@ -2885,9 +2887,6 @@ input, select, textarea {
 		right: 0;
 		border-radius: 3px 0 0 3px;
 		}
-		.prev {
-			
-		}
 		/* On hover, add a grey background color */
 		.prev:hover, .next:hover {
 		background-color: #f1f1f1;
@@ -2898,7 +2897,7 @@ input, select, textarea {
 			width: 100%;
 		}
 		#meercarouselbutton {
-			color: #e2ce1d!important;
+			color: #e1ce46!important;
 			text-align: center;
 			margin: auto;
 		}
@@ -2917,7 +2916,7 @@ input, select, textarea {
 		.typewriter h1 {
 			color: #fff!important;
 			overflow: hidden; /* Ensures the content is not revealed until the animation */
-			border-right: .15em solid orange; /* The typwriter cursor */
+			border-right: .15em solid #e1ce46; /* The typwriter cursor */
 			white-space: nowrap; /* Keeps the content on a single line */
 			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 			letter-spacing: .15em; /* Adjust as needed */
@@ -2935,5 +2934,5 @@ input, select, textarea {
 		  /* The typewriter cursor effect */
 		  @keyframes blink-caret {
 			from, to { border-color: transparent }
-			50% { border-color: orange }
+			50% { border-color: #e1ce46 }
 		  }
