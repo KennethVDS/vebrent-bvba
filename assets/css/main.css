@@ -941,7 +941,11 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 60px;
 						}
-
+						@keyframes breath {
+							0%   { background-size: 100% ; }
+							50% { background-size: 111%; }
+							100% { background-size: 100%; }
+						  }
 		}
 
 		@media screen and (max-width: 980px) {
@@ -1186,6 +1190,11 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 80px;
 						}
+						@keyframes breath {
+							0%   { background-size: 200% ; }
+							50% { background-size: 210%; }
+							100% { background-size: 200%; }
+						  }
 
 		}
 
@@ -1585,12 +1594,16 @@ input, select, textarea {
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
 		}
-
+		.box.post h3 {
+			text-align: center;
+		}
 		.box.post header > p {
 			margin-top: 1.25em;
 			font-size: 1.25em;
 		}
-
+		.box.post p {
+			text-align: center;
+		}
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
@@ -2040,7 +2053,7 @@ input, select, textarea {
 	#nav {
 		margin: 0;
 		text-align: right;
-		margin-right: 2em;
+		margin-right: 6em;
 	}
 
 		#nav > ul {
@@ -2134,7 +2147,7 @@ input, select, textarea {
 	}
 	#banner {
 		background-image: url(../images/main/main.jpeg);
-		background-position: center center;
+		background-position: center;
 		background-size: cover;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
@@ -2145,7 +2158,7 @@ input, select, textarea {
 	}
 	@keyframes breath {
 		0%   { background-size: 100% ; }
-		50% { background-size: 111%; }
+		50% { background-size: 110%; }
 		100% { background-size: 100%; }
 	  }
 		#banner header {
@@ -2178,6 +2191,10 @@ input, select, textarea {
 				text-align: center;
 				position: relative;
 				margin-top: 55px;
+				margin: 0 auto;
+			}
+			#videoframe {
+				text-align: center;
 			}
 /* Intro */
 
@@ -2338,14 +2355,6 @@ input, select, textarea {
 			#header {
 				padding: 4em 0 3em 0;
 			}
-
-		/* Banner */
-
-			#banner {
-				padding: 6em 0;
-				margin: 3em 0 0 0;
-			}
-
 		/* Intro */
 
 			#intro {
@@ -2813,12 +2822,6 @@ input, select, textarea {
 
 
 		/* Banner */
-
-			#banner {
-				padding: 6em 0;
-				margin: 2em 0 0 0;
-			}
-
 				#banner header {
 					color: #ffffff;
 					padding: 0;
@@ -2836,7 +2839,11 @@ input, select, textarea {
 					#banner header p {
 						font-size: 1.2em;
 					}
-
+					@keyframes breath {
+						0%   { background-size: 150% ; }
+						50% { background-size: 200%; }
+						100% { background-size: 150%; }
+					  }
 		/* Main */
 
 			#main {
@@ -2854,7 +2861,9 @@ input, select, textarea {
 		position: relative;
 		margin: auto;
 		}
-
+		#meerinfo {
+			text-align: center;
+		}
 		/* Next & previous buttons */
 		.prev, .next {
 		cursor: pointer;
@@ -2876,7 +2885,9 @@ input, select, textarea {
 		right: 0;
 		border-radius: 3px 0 0 3px;
 		}
-
+		.prev {
+			
+		}
 		/* On hover, add a grey background color */
 		.prev:hover, .next:hover {
 		background-color: #f1f1f1;
@@ -2902,3 +2913,27 @@ input, select, textarea {
 			width: 11em;
 			float: left;
 		}
+
+		.typewriter h1 {
+			color: #fff!important;
+			overflow: hidden; /* Ensures the content is not revealed until the animation */
+			border-right: .15em solid orange; /* The typwriter cursor */
+			white-space: nowrap; /* Keeps the content on a single line */
+			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+			letter-spacing: .15em; /* Adjust as needed */
+			animation: 
+			  typing 3.5s steps(30, end),
+			  blink-caret .5s step-end infinite;
+		  }
+		  
+		  /* The typing effect */
+		  @keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		  }
+		  
+		  /* The typewriter cursor effect */
+		  @keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: orange }
+		  }
