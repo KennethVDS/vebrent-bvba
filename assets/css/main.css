@@ -107,7 +107,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		color: #252122;
+		color: inherit;
 		font-weight: 400;
 	}
 
@@ -2156,7 +2156,8 @@ input, select, textarea {
 		text-align: center;
 		padding: 8em 0;
 		margin: 1.5em 0 0 0;
-		animation: breath 7s linear infinite;
+		min-height: 25vh;
+		animation: breath 3s linear infinite;
 	}
 	@keyframes breath {
 		0%   { background-size: 100% ; }
@@ -2175,6 +2176,7 @@ input, select, textarea {
 				color: #fff;
 				font-weight: 700;
 				font-size: 2.5em;
+				margin-bottom: 1.1em;
 			}
 
 			#banner header p {
@@ -2188,12 +2190,12 @@ input, select, textarea {
 			#video {
 				background-position: center;
 				background-repeat: no-repeat;
-				width: 75%;
-				height: 75%;
+				width: 88%;
 				text-align: center;
 				position: relative;
 				margin-top: 55px;
 				margin: 0 auto;
+				max-width: 1000px;
 			}
 			#videoframe {
 				text-align: center;
@@ -2274,6 +2276,13 @@ input, select, textarea {
 
 		#intro footer {
 			margin: 0;
+		}
+		#mainaboutlist li {
+			font-weight: bold;
+			color: #e1ce46;
+		}
+		.last h3 {
+			color: #e1ce46!important;
 		}
 /* Main */
 
@@ -2841,17 +2850,24 @@ input, select, textarea {
 					#banner header p {
 						font-size: 1.2em;
 					}
-					@keyframes breath {
-						0%   { background-size: 150% ; }
-						50% { background-size: 200%; }
-						100% { background-size: 150%; }
-					  }
+					
+				@keyframes breath {
+					0%   { background-size: 220%; }
+					50% { background-size: 231%; }
+					100% { background-size: 220%; }
+				  }
 		/* Main */
 
 			#main {
 				padding: 20px 0;
 			}
 
+	}
+	#verhuur {
+		text-align: center;
+		margin: auto;
+		align-content: center;
+		padding-top: 111px;
 	}
 /* CAROUSEL */
 	.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
@@ -2880,8 +2896,23 @@ input, select, textarea {
 		transition: 0.6s ease;
 		border-radius: 0 3px 3px 0;
 		user-select: none;
+		text-decoration: none;
 		}
-
+		/* Caption text */
+		.text {
+			color: #e1ce46;
+			font-size: 1.5em;
+			padding: 8px 12px;
+			position: relative;
+			bottom: 55px;
+			width: 55%;
+			font-weight: 444;
+			text-align: center;
+			text-transform: uppercase;
+			text-shadow: 1px 1px #998c1a;
+			background-color: #221e1f;
+			margin: auto!important;
+		}
 		/* Position the "next button" to the right */
 		.next {
 		right: 0;
@@ -2900,6 +2931,7 @@ input, select, textarea {
 			color: #e1ce46!important;
 			text-align: center;
 			margin: auto;
+			padding-bottom: 3em;
 		}
 		#meercarouselbutton:hover {
 			background-color: transparent!important;
@@ -2920,8 +2952,11 @@ input, select, textarea {
 			white-space: nowrap; /* Keeps the content on a single line */
 			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 			letter-spacing: .15em; /* Adjust as needed */
+			max-width: fit-content;
+			font-size: 30px;
+    		font-size: 3.5vw;
 			animation: 
-			  typing 3.5s steps(30, end),
+			  typing 3.5s steps(30, end) forwards,
 			  blink-caret .5s step-end infinite;
 		  }
 		  
