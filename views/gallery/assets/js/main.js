@@ -47,7 +47,7 @@
 				});
 
 		}
-
+		
 	// Scroll back to top.
 		$window.scrollTop(0);
 

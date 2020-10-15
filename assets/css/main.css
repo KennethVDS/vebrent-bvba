@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
-/*
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -209,7 +203,12 @@ input, select, textarea {
 			.container {
 				width: calc(100% - 40px);
 			}
-
+			#activiteitenindex .row {
+				margin-left: 50%;
+				left: 50%;
+				transform: translate(-50%);
+				min-width: 88vw;
+			}
 		}
 
 /* Row */
@@ -1394,7 +1393,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: -20px;
-					margin-left: -20px;
+					margin-left: 0;
 				}
 
 					.row > * {
@@ -1788,6 +1787,7 @@ input, select, textarea {
 /* Contact */
 
 	ul.contact {
+		display: inline-block;
 		list-style: none;
 		padding-left: 0;
 	}
@@ -1802,13 +1802,14 @@ input, select, textarea {
 				position: absolute;
 				left: 0;
 				top: 1.3em;
-				font-size: 1.1em;
+				font-size: 1em;
 				font-weight: bold;
 				color: #ffffff;
 			}
 
 			ul.contact li p {
 				margin: auto;
+				font-size: 0.88em;
 				width: 125px;
 
 			}
@@ -1832,67 +1833,6 @@ input, select, textarea {
 			background-color: #dfdfdf;
 		}
 
-/* Dates */
-
-	ul.dates {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.dates li {
-			position: relative;
-			border-top: solid 1px #ddd;
-			padding: 1.3em 0 1.3em 6.75em;
-		}
-
-		ul.dates .date {
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 1.3em;
-			background-color: #e1ce46;
-			height: 3.5em;
-			text-align: center;
-			color: #fff;
-			line-height: 1em;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
-			padding: 0.5em 0.75em 0 1em;
-		}
-
-			ul.dates .date:after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				right: -1.2em;
-				border-left: solid 1.25em #e1ce46;
-				border-top: solid 1.8em transparent;
-				border-bottom: solid 1.8em transparent;
-			}
-
-			ul.dates .date strong {
-				display: block;
-				font-size: 1.75em;
-				padding-top: 0.15em;
-			}
-
-		ul.dates h3 {
-			font-size: 1.1em;
-		}
-
-		ul.dates p {
-			margin: 0;
-		}
-
-		ul.dates li:first-child {
-			border-top: 0;
-			padding-top: 0;
-		}
-
-			ul.dates li:first-child .date {
-				top: 0;
-			}
-
 /* Divided */
 
 	ul.divided {
@@ -1913,6 +1853,8 @@ input, select, textarea {
 /* Social */
 
 	ul.social {
+		padding-top: 9vh;
+		float: right;
 		list-style: none;
 		padding-left: 0;
 		overflow: hidden;
@@ -1921,9 +1863,8 @@ input, select, textarea {
 	}
 
 		ul.social li {
-			display: inline-block;
 			padding-left: 0;
-			margin-left: 0.75em;
+			margin-left: 0;
 		}
 
 			ul.social li:first-child {
@@ -1942,7 +1883,7 @@ input, select, textarea {
 
 				ul.social li a:before {
 					color: #fff;
-					font-size: 2em;
+					font-size: 1.5em;
 					line-height: 1.5em;
 				}
 
@@ -2160,9 +2101,9 @@ input, select, textarea {
 		animation: breath 3s linear infinite;
 	}
 	@keyframes breath {
-		0%   { background-size: 100% ; }
+		0%   { background-size: 102% ; }
 		50% { background-size: 110%; }
-		100% { background-size: 100%; }
+		100% { background-size: 102%; }
 	  }
 		#banner header {
 			position: relative;
@@ -2170,15 +2111,28 @@ input, select, textarea {
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
+			width: 50%;
 		}
-
-			#banner header h2 {
+		#navPanel span {
+			border: none;
+		}
+			#banner header h1 {
 				color: #fff;
 				font-weight: 700;
-				font-size: 2.5em;
+				font-size: 2.5vw;
 				margin-bottom: 1.1em;
 			}
-
+			  span {
+				border-right: .11em solid #998c1a;
+				animation: caret 1s steps(1) infinite;
+			  }
+			  
+			  @keyframes caret {
+				50% {
+				  border-color: transparent;
+				}
+			  }
+			  
 			#banner header p {
 				color: #e1ce46;
 				padding: 0;
@@ -2201,10 +2155,33 @@ input, select, textarea {
 				text-align: center;
 			}
 /* Intro */
-
+	#vacaturelink {
+		position: relative;
+		text-align: center;
+		color: #998c1a;
+		
+		
+	}
+	#vacaturelink img {
+		opacity: 0.66;
+		width: 55%;
+	}
+	.centered {
+		background-color: #252122;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 15px;
+		padding: 4.4px;
+	  }
 	#intro {
 		text-align: center;
 		overflow: hidden;
+		background-image: url(../images/intro.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	
 		#intro section {
@@ -2213,7 +2190,7 @@ input, select, textarea {
 		}
 
 		#intro h2 {
-			margin-top: 175px;
+			margin-top: 1.1em;
 			color: #ffffff;
 			font-size: 1.75em;
 			font-weight: bolder;
@@ -2267,7 +2244,6 @@ input, select, textarea {
 				top: 0;
 				display: block;
 				z-index: -1;
-				box-shadow: -32px 0 0 0 #252122, 0 -32px 0 0 #252122, 0 32px 0 0 #252122, -32px 32px 0 0 #252122, -32px -32px 0 0 #252122, 0 0 32px 0 rgba(0, 0, 0, 0.15);
 			}
 
 		#intro .button {
@@ -2297,8 +2273,6 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
-			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.1;
 		}
@@ -2313,7 +2287,8 @@ input, select, textarea {
 		position: relative;
 		color: #858484;
 		text-align: center;
-		padding: 4em 0;
+		padding: 3.6em 0 0 0;
+		background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23998c1a' fill-opacity='0.12'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	}
 		#footer:before {
 			content: '';
@@ -2447,7 +2422,14 @@ input, select, textarea {
 
 		/* Nav */
 		.vebrentlogo {
-			display: none;
+			float: right;
+			height: 12.5vh;
+			align-items: center;
+			align-content: center;
+		}
+		.vebrentlogo img {
+			width: 11vw!important;
+			margin-right: 2.2em;
 		}
 			#nav {
 				display: none;
@@ -2456,7 +2438,13 @@ input, select, textarea {
 				align-content: center !important;
 			}
 		/* Intro */
-
+		#vacaturelink {
+			margin-top: 3em;
+		}
+		#vacaturelink img {
+			opacity: 0.66;
+			width: 88%;
+		}
 			#intro {
 				padding: 3em 0 0 0;
 			}
@@ -2563,14 +2551,14 @@ input, select, textarea {
 						height: 40px;
 						line-height: 40px;
 						font-size: 18px;
-						color: #252122;
+						color: #e1ce46;
+						background-color: #252122;
 						text-align: center;
-						background: #e1ce46;
 						border-radius: 5px;
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #e1ce46;
+						background-color: #302c0e;
 					}
 
 			#navPanel {
@@ -2651,6 +2639,11 @@ input, select, textarea {
 					display: none;
 					margin-left: 11px;
 				}
+				@keyframes breath {
+					0%   { background-size: 120% ; }
+					50% { background-size: 130%; }
+					100% { background-size: 120%; }
+				  }
 			}
 				
 			body.navPanel-visible #page-wrapper {
@@ -2758,21 +2751,6 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
-		/* Divided */
-
-			ul.divided li {
-				padding: 0.5em 0 0.5em 0;
-			}
-
-		/* Contact */
-
-			ul.contact li {
-				padding: 0.8em 0 0.8em 7em;
-			}
-
-				ul.contact li h3 {
-					top: 0.8em;
-				}
 
 		/* Dates */
 
@@ -2830,7 +2808,10 @@ input, select, textarea {
 					letter-spacing: -0.035em;
 				}
 
-
+				.vebrentlogo img {
+					width: 3.3em!important;
+					margin: 1.1em 2.2em 0 0 ;
+				}
 
 		/* Banner */
 				#banner header {
@@ -2838,13 +2819,14 @@ input, select, textarea {
 					padding: 0;
 					display: block;
 					margin-top: 0;
+					width: 100%;
 				}
 
-					#banner header h2 {
+					#banner header h1 {
 						color: #ffffff;
 						font-size: 1.5em;
 						line-height: 1.5em;
-						margin: 0 0 0.25em 0;
+						margin: 0 0 0.33em 0;
 					}
 
 					#banner header p {
@@ -2940,34 +2922,8 @@ input, select, textarea {
 			font-size: 2em;
 			margin-bottom: 11px;
 		}
-		.vebrentlogo {
+		.vebrentlogo img{
 			width: 11em;
 			float: left;
 		}
-
-		.typewriter h1 {
-			color: #fff!important;
-			overflow: hidden; /* Ensures the content is not revealed until the animation */
-			border-right: .15em solid #e1ce46; /* The typwriter cursor */
-			white-space: nowrap; /* Keeps the content on a single line */
-			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-			letter-spacing: .15em; /* Adjust as needed */
-			max-width: fit-content;
-			font-size: 30px;
-    		font-size: 3.5vw;
-			animation: 
-			  typing 3.5s steps(30, end) forwards,
-			  blink-caret .5s step-end infinite;
-		  }
 		  
-		  /* The typing effect */
-		  @keyframes typing {
-			from { width: 0 }
-			to { width: 100% }
-		  }
-		  
-		  /* The typewriter cursor effect */
-		  @keyframes blink-caret {
-			from, to { border-color: transparent }
-			50% { border-color: #e1ce46 }
-		  }
